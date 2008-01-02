@@ -18,6 +18,7 @@ License:        GPL
 Group:		System/Configuration/Hardware
 URL:		http://zd1211.ath.cx/
 Source0:        %{modname}-driver-%{svnver}.tar.bz2
+Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 %if %build_dkms
 Requires:	dkms-%{name} = %{version}
 %endif
