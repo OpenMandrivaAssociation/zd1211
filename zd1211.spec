@@ -7,7 +7,7 @@
 %define name	zd1211
 %define	version	2.5.0.0
 %define svnver	r67
-%define	rel	0.%{svnver}.3
+%define	rel	0.%{svnver}.4
 %define	release	%mkrel %{rel}
 
 Name:           %{name}
