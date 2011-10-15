@@ -3,21 +3,18 @@
 %{?_with_dkms:%define build_dkms 1}
 %{?_without_dkms:%define build_dkms 0}
 
-%define	modname	zd1211
-%define name	zd1211
-%define	version	2.5.0.0
-%define svnver	r67
-%define	rel	0.%{svnver}.4
-%define	release	%mkrel %{rel}
+%define	modname	%{name}
+%define svnver	r85
+%define	rel	0.%{svnver}.1
 
-Name:           %{name}
-Summary:        Userland tools for zd1211 driver
-Version:        %{version}
-Release:        %{release}
-License:        GPL
+Name:		zd1211
+Summary:	Userland tools for zd1211 driver
+Version:	2.5.0.0
+Release:	%mkrel %{rel}
+License:	GPL
 Group:		System/Configuration/Hardware
 URL:		http://zd1211.ath.cx/
-Source0:        %{modname}-driver-%{svnver}.tar.bz2
+Source0:	%{modname}-driver-%{svnver}.tar.xz
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 %if %build_dkms
 Requires:	dkms-%{name} = %{version}
@@ -42,7 +39,7 @@ DKMS package for %{name} kernel module.
 %endif
 
 %prep
-%setup -q -n %{modname}-driver-%{svnver}
+%setup -q -n %{modname}
 find -type f |xargs chmod 644
 
 %build
