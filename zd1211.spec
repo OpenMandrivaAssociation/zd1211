@@ -90,3 +90,37 @@ dkms remove -m %{modname} -v %{version}-%{release} --rpm_safe_upgrade --all
 /usr/src/%{name}-%{version}-%{release}
 %endif
 
+
+
+%changelog
+* Sat Oct 15 2011 Matthew Dawkins <mattydaw@mandriva.org> 2.5.0.0-0.r85.1mdv2012.0
++ Revision: 704820
+- fixed svn checkout
+- new snapshot revision 85
+  cleaned up specfile
+
+* Mon Sep 21 2009 Thierry Vignaud <tv@mandriva.org> 2.5.0.0-0.r67.4mdv2010.0
++ Revision: 446316
+- rebuild
+
+* Fri Mar 06 2009 Antoine Ginies <aginies@mandriva.com> 2.5.0.0-0.r67.3mdv2009.1
++ Revision: 350035
+- 2009.1 rebuild
+
+* Thu Jan 03 2008 Olivier Blin <blino@mandriva.org> 2.5.0.0-0.r67.2mdv2008.1
++ Revision: 141006
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Tue Oct 02 2007 Olivier Blin <blino@mandriva.org> 2.5.0.0-0.r67.2mdv2008.0
++ Revision: 94550
+- rebuild for kmod provides
+- import zd1211
+
+
+* Thu Mar 30 2006 Per Øyvind Karlsen <pkarlsen@mandriva.com> 2.5.0.0-0.r67.1mdk
+- some cleanups and adaptions
+- from Torbjorn Turpeinen tobbe@nyvalls.se> :
+	o Initial release
