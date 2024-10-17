@@ -13,7 +13,7 @@ Version:	2.5.0.0
 Release:	%mkrel %{rel}
 License:	GPL
 Group:		System/Configuration/Hardware
-URL:		http://zd1211.ath.cx/
+URL:		https://zd1211.ath.cx/
 Source0:	%{modname}-driver-%{svnver}.tar.xz
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 %if %build_dkms
